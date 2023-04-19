@@ -1,0 +1,35 @@
+hook com/wh/myapplication/MainActivity.onCreate  com/wh/myapplication/A.say
+targetClass= com.wh.myapplication.MainActivity  invokeMethod= onCreate  (Landroid/os/Bundle;)V
+opcode=182, owner=com/wh/myapplication/A, name=say, descriptor=(Ljava/lang/String;)V
+------>
+opcode=184, owner=com/wh/myapplication/TestKt, name=say, descriptor=(Lcom/wh/myapplication/A;Ljava/lang/String;)V
+
+
+hook com/wh/myapplication/MainActivity.testGetRunningAppProcesses  android/app/ActivityManager.getRunningAppProcesses
+targetClass= com.wh.myapplication.MainActivity  invokeMethod= testGetRunningAppProcesses  ()V
+opcode=182, owner=android/app/ActivityManager, name=getRunningAppProcesses, descriptor=()Ljava/util/List;
+------>
+opcode=184, owner=com/wh/myapplication/JavaTest, name=getRunningAppProcesses, descriptor=(Landroid/app/ActivityManager;)Ljava/util/List;
+
+
+hook com/wh/myapplication/MainActivity.testGetRecentTasks  android/app/ActivityManager.getRecentTasks
+targetClass= com.wh.myapplication.MainActivity  invokeMethod= testGetRecentTasks  ()V
+opcode=182, owner=android/app/ActivityManager, name=getRecentTasks, descriptor=(II)Ljava/util/List;
+------>
+opcode=184, owner=com/wh/myapplication/JavaTest, name=getRecentTasks, descriptor=(Landroid/app/ActivityManager;II)Ljava/util/List;
+
+
+hook com/wh/myapplication/MainActivity.onCreate$lambda$1  android/app/ActivityManager.getRunningAppProcesses
+targetClass= com.wh.myapplication.MainActivity  invokeMethod= onCreate$lambda$1  (Lcom/wh/myapplication/MainActivity;Landroid/view/View;)V
+opcode=182, owner=android/app/ActivityManager, name=getRunningAppProcesses, descriptor=()Ljava/util/List;
+------>
+opcode=184, owner=com/wh/myapplication/JavaTest, name=getRunningAppProcesses, descriptor=(Landroid/app/ActivityManager;)Ljava/util/List;
+
+
+hook com/wh/myapplication/MainActivity.onCreate$lambda$3  android/provider/Settings$System.getString
+targetClass= com.wh.myapplication.MainActivity  invokeMethod= onCreate$lambda$3  (Lcom/wh/myapplication/MainActivity;Landroid/view/View;)V
+opcode=184, owner=android/provider/Settings$System, name=getString, descriptor=(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
+------>
+opcode=184, owner=com/wh/myapplication/JavaTest, name=getString, descriptor=(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
+
+
