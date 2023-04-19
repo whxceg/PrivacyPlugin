@@ -1,0 +1,24 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        maven {
+            url = "file://Users/wanghao/.m2/test/repository/"
+        }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url = "file://Users/wanghao/.m2/test/repository/"
+        }
+    }
+}
+rootProject.name = "PrivacyPlugin"
+include ':app'
+include ':PrivacyScript'
+include ':MethodReplaceAnnoation'
