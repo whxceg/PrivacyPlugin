@@ -72,6 +72,77 @@ class MethodReplaceItem {
 
     }
 
+    String getReplaceClass() {
+        return replaceClass
+    }
+
+    void setReplaceClass(String replaceClass) {
+        this.replaceClass = replaceClass
+    }
+
+    String getReplaceMethod() {
+        return replaceMethod
+    }
+
+    void setReplaceMethod(String replaceMethod) {
+        this.replaceMethod = replaceMethod
+    }
+
+    String getReplaceDesc() {
+        return replaceDesc
+    }
+
+    void setReplaceDesc(String replaceDesc) {
+        this.replaceDesc = replaceDesc
+    }
+
+    int getReplaceOpcode() {
+        return replaceOpcode
+    }
+
+    void setReplaceOpcode(int replaceOpcode) {
+        this.replaceOpcode = replaceOpcode
+    }
+
+    String getTargetOwner() {
+        return targetOwner
+    }
+
+    void setTargetOwner(String targetOwner) {
+        this.targetOwner = targetOwner
+    }
+
+    String getTargetMethod() {
+        return targetMethod
+    }
+
+    void setTargetMethod(String targetMethod) {
+        this.targetMethod = targetMethod
+    }
+
+    String getTargetDesc() {
+        return targetDesc
+    }
+
+    void setTargetDesc(String targetDesc) {
+        this.targetDesc = targetDesc
+    }
+
+    int getTargetOpcode() {
+        return targetOpcode
+    }
+
+    void setTargetOpcode(int targetOpcode) {
+        this.targetOpcode = targetOpcode
+    }
+
+    boolean getWillHook() {
+        return willHook
+    }
+
+    void setWillHook(boolean willHook) {
+        this.willHook = willHook
+    }
 
     static boolean isEmpty(String str) {
         return str == null || str.isEmpty()
