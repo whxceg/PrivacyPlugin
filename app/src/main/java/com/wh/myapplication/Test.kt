@@ -4,7 +4,7 @@ import android.app.ActivityManager
 import android.app.ActivityManager.RecentTaskInfo
 import android.app.ActivityManager.RunningAppProcessInfo
 import android.util.Log
-//import com.sam.lib.annoation.methodreplace.MethodReplace
+import com.sam.lib.annoation.methodreplace.MethodReplace
 
 ///**
 // * @date 2023/4/17.
@@ -41,8 +41,8 @@ import android.util.Log
 //    return activityManager.getRunningTasks(maxNum)
 //}
 
-//@MethodReplace(opcode = 182, owner = "com/wh/myapplication/A")
+@MethodReplace(opcode = 182, owner = "com/wh/myapplication/A")
 fun say(a: A, s: String) {
-    Log.e("Tag", "replace a 五参数")
+    Log.e("Tag", "replace a 无参数")
     return a.say(s)
 }

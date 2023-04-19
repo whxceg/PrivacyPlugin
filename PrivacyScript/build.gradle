@@ -10,6 +10,8 @@ dependencies {
     implementation group: 'org.javassist', name: 'javassist', version: '3.22.0-GA'
 
 //    implementation 'com.sam.lib.annoation:methodreplace:0.0.0.1.3'
+    implementation 'com.github.whxceg.PrivacyPlugin:MethodReplaceAnnoation:0.0.0.1.alpha05'
+
 }
 
 
