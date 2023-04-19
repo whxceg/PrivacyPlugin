@@ -4,7 +4,7 @@
 buildscript {
 
     ext.PublishPrivacytestPluginVersion = "0.0.0.1.68"
-    ext.USEPublishPrivacytestPluginVersion = "0.0.0.1.68"
+    ext.PrivacytestPluginVersion = "0.0.0.1.68"
 
     repositories {
         maven {
@@ -16,16 +16,17 @@ buildscript {
         google()
         mavenCentral()
         gradlePluginPortal()
-        maven {
-            url = "file://Users/wanghao/.m2/test/repository/"
-        }
+        maven { url "file://Users/wanghao/.m2/test/repository/" }
+        maven { url 'https://jitpack.io' }
     }
 
     dependencies {
         classpath 'com.android.tools.build:gradle:4.1.2'
 //        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.3.41"
         classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31'
-        classpath "com.sam.lib.privacytest.plugin:plugin:$USEPublishPrivacytestPluginVersion"
+//        classpath "com.sam.lib.privacytest.plugin:plugin:$PrivacytestPluginVersion"
+        classpath "com.github.whxceg.PrivacyPlugin:PrivacyScript:0.0.0.1.alpha05"
+
     }
 }
 
@@ -39,9 +40,8 @@ allprojects {
         }
         google()
         mavenCentral()
-        maven {
-            url = "file://Users/wanghao/.m2/test/repository/"
-        }
+        maven { url "file://Users/wanghao/.m2/test/repository/" }
+        maven { url 'https://jitpack.io' }
     }
 }
 
